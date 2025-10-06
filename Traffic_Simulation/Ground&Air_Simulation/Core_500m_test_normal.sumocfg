@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="G_A_net.net.xml"/>
+        <route-files value="mapcore_500m_core_withshape_with_light_test_normal.rou.xml"/>
+       <additional-files value="e1.add.xml"/>
+   <time>
+        <!-- 设置开始时间（默认为0） -->
+        <begin value="0"/>
+        <!-- 设置结束时间（总运行时间=end - begin） -->
+        <end value="3600"/> <!-- 3600秒=1小时 -->
+    </time>
+
+
+    </input>
+
+    <!-- <gui_only>
+        <gui-settings-file value="viewsettings.xml"/>
+    </gui_only> -->
+
+</configuration>
