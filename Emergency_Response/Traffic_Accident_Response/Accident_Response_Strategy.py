@@ -139,9 +139,9 @@ def is_vehicle_finished(vehicle_id, edge_id):
     current_road = traci.vehicle.getRoadID(vehicle_id)
     return current_road == edge_id
 
-sumo_net_file = "E:\\Traffic_Simulation\\Traffic_accident\\full_net\\new_add_light.net.xml" 
-input_rou = "E:\\Traffic_Simulation\\Traffic_accident\\full_rou\\mapall_addline.rou.xml"
-output_rou = "E:\\Traffic_Simulation\\Traffic_accident\\full_rou\\mapall_addline_response.rou.xml"
+sumo_net_file = "new_add_light.net.xml" 
+input_rou = "mapall_addline.rou.xml"
+output_rou = "mapall_addline_response.rou.xml"
 G = sumo_net_to_networkx(sumo_net_file)
 # accident case;
 accident_spots = ["200042649", "200040849", "200063134", "200002421", "200040901"]
